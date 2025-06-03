@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estipona - Portfolio</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div class="nav-buttons">
+          <button class="nav-btn active" onclick="showSection('about')">
+            About Me
+          </button>
+          <button class="nav-btn" onclick="showSection('projects')">
+            Projects
+          </button>
+          <button class="nav-btn" onclick="showSection('contact')">
+            Contact
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <!-- About Me Section -->
+      <section id="about" class="section active">
+        <div class="hero">
+          <div class="profile-container">
+            <div class="profile-image">
+              <img src="jest.png" />
+            </div>
+          </div>
+          <div class="hero-content">
+            <h1 class="hero-name">Jestley Charles Estipona</h1>
+            <div class="hero-description">
+              <p>
+                You can call me <b class="highlight">Jest</b> for short.<br />
+                I'm a passionate developer with expertise in
+                <b class="highlight">Java</b> and<br />
+                <b class="highlight">Game Development</b>. I love creating
+                beautiful and fun<br />
+                games in my free time.
+              </p>
+              <br />
+              <p>
+                I also have the ability to work with languages like<br />
+                <b class="highlight">C#</b>
+                <b class="highlight">HTML</b>
+                <b class="highlight">CSS</b>
+                <b class="highlight">JavaScript</b><br />
+                <b class="highlight">Python</b> and
+                <b class="highlight">SQL</b>
+                <br /><br />
+                These are also the environments I can work with:<br />
+                <b class="highlight">Github</b>
+                <b class="highlight">Android Studio</b>
+                <b class="highlight">Firebase</b>
+                <b class="highlight">Visual Studio</b><br />
+                <b class="highlight">Visual Studio Code</b>
+                <b class="highlight">SAP</b>
+                <b class="highlight">MSSQL</b>
+                <br /><br />
+                And finally some graphic designing tools like<br />
+                <b class="highlight">Photoshop</b>
+                <b class="highlight">Adobe Premiere</b>
+                <b class="highlight">Figma</b>
+                <b class="highlight">Canva</b>
+                <b class="highlight">Aseprite</b>
+              </p>
+              <!-- <br />
+              <button
+                class="connect-btn"
+                style="margin-bottom: 1rem;"
+                onclick="showSectionFromButton('projects')"
+              >
+                See my projects
+              </button>
+              <br />
+              <button
+                class="connect-btn"
+                onclick="showSectionFromButton('contact')"
+              >
+                Let's Connect
+              </button> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3 class="project-title">My Programming Portfolio</h3>
+            <p class="project-description">
+              A simple yet pretty portfolio packed with information about
+              myself. It proudly showcases the projects that I made, while also
+              flexing my designing capabilities.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">GitHub</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section">
+        <div class="contact-container">
+          <h2 class="contact-title">Let's Connect</h2>
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="copy-success">Copied!</div>
+              <button
+                class="copy-icon"
+                onclick="copyToClipboard('vyzymz@gmail.com', this)"
+                title="Copy email"
+              >
+                📋
+              </button>
+              <div class="contact-label">Work Email</div>
+              <div class="contact-value">vyzymz@gmail.com</div>
+            </div>
+            <div class="contact-item">
+              <div class="copy-success">Copied!</div>
+              <button
+                class="copy-icon"
+                onclick="copyToClipboard('(+63) 9489067114', this)"
+                title="Copy phone"
+              >
+                📋
+              </button>
+              <div class="contact-label">Contact Number</div>
+              <div class="contact-value">(+63) 9489067114</div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-label">Currently Living At</div>
+              <div class="contact-value">
+                Commonwealth Avenue, Quezon City,<br />Metro Manila, Philippines
+              </div>
+            </div>
+            <div class="contact-item" style="margin-bottom: 0">
+              <div class="contact-label">Available for</div>
+              <div class="contact-value">
+                Freelance Projects • Full-time Opportunities • Collaborations
+              </div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link">LinkedIn</a>
+            <a href="#" class="social-link">GitHub</a>
+            <a href="#" class="social-link">Facebook</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
